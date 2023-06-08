@@ -38,7 +38,7 @@ function getIconUrl(iconCode) {
 	return `icons/${ICON_MAP.get(iconCode)}.svg`;
 }
 
-const currentIcon = document.querySelector("[data-current-icon");
+const currentIcon = document.querySelector("[data-current-icon]");
 function renderCurrentWeather(current) {
 	currentIcon.src = getIconUrl(current.iconCode);
 	setValue("current-temp", current.currentTemp);
